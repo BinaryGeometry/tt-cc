@@ -1,0 +1,424 @@
+{
+
+    "leaderboard": [
+      {
+        "id":1,
+        "position":1,
+        "warband":"Freebeasts",
+        "played":"8",
+        "won":"7",
+        "lost":"1"
+      },
+      {
+        "id":2,
+        "position":2,
+        "warband":"Rogues",
+        "played":"8",
+        "won":"5",
+        "lost":"3"
+      },
+      {
+        "id":3,
+        "postition":3,
+        "warband":"Royalists",
+        "played":"8",
+        "won":"3",
+        "lost":"5"
+      },
+      {
+        "id":4,
+        "postition":4,
+        "warband":"Wildbeasts",
+        "played":"8",
+        "won":"1",
+        "lost":"7"
+      }  
+    ],
+    "locations": [
+             {
+                 "id": 0,
+                 "name": "Acme Fresh Start Housing",
+                 "city": "Chicago",
+                 "state": "IL",
+                 "photo": "http://localhost:4200/assets/background.login.jpg",
+                 "availableUnits": 4,
+                 "wifi": true,
+                 "laundry": true
+             },
+             {
+                 "id": 1,
+                 "name": "A113 Transitional Housing",
+                 "city": "Santa Monica",
+                 "state": "CA",
+                 "photo": "http://localhost:4200/assets/background.login.jpg",
+                 "availableUnits": 0,
+                 "wifi": false,
+                 "laundry": true
+             },
+             {
+                 "id": 2,
+                 "name": "Warm Beds Housing Support",
+                 "city": "Juneau",
+                 "state": "AK",
+                 "photo": "http://localhost:4200/assets/background.login.jpg",
+                 "availableUnits": 1,
+                 "wifi": false,
+                 "laundry": false
+             },
+             {
+                 "id": 3,
+                 "name": "Homesteady Housing",
+                 "city": "Chicago",
+                 "state": "IL",
+                 "photo": "http://localhost:4200/assets/background.login.jpg",
+                 "availableUnits": 1,
+                 "wifi": true,
+                 "laundry": false
+             },
+             {
+                 "id": 4,
+                 "name": "Happy Homes Group",
+                 "city": "Gary",
+                 "state": "IN",
+                 "photo": "http://localhost:4200/assets/background.login.jpg",
+                 "availableUnits": 1,
+                 "wifi": true,
+                 "laundry": false
+             },
+             {
+                 "id": 5,
+                 "name": "Hopeful Apartment Group",
+                 "city": "Oakland",
+                 "state": "CA",
+                 "photo": "http://localhost:4200/assets/background.login.jpg",
+                 "availableUnits": 2,
+                 "wifi": true,
+                 "laundry": true
+             },
+             {
+                 "id": 6,
+                 "name": "Seriously Safe Towns",
+                 "city": "Oakland",
+                 "state": "CA",
+                 "photo": "http://localhost:4200/assets/background.login.jpg",
+                 "availableUnits": 5,
+                 "wifi": true,
+                 "laundry": true
+             },
+             {
+                 "id": 7,
+                 "name": "Hopeful Housing Solutions",
+                 "city": "Oakland",
+                 "state": "CA",
+                 "photo": "http://localhost:4200/assets/background.login.jpg",
+                 "availableUnits": 2,
+                 "wifi": true,
+                 "laundry": true
+             },
+             {
+                 "id": 8,
+                 "name": "Seriously Safe Towns",
+                 "city": "Oakland",
+                 "state": "CA",
+                 "photo": "http://localhost:4200/assets/background.login.jpg",
+                 "availableUnits": 10,
+                 "wifi": false,
+                 "laundry": false
+             },
+             {
+                 "id": 9,
+                 "name": "Capital Safe Towns",
+                 "city": "Portland",
+                 "state": "OR",
+                 "photo": "http://localhost:4200/assets/background.login.jpg",
+                 "availableUnits": 6,
+                 "wifi": true,
+                 "laundry": true
+             }
+         ],
+
+    "players":[
+        {
+          "id":1,
+          "name":"Player 1",
+          "warband":1
+        },
+        {
+          "id":2,
+          "name":"Computer",
+          "warband":2
+        }
+    ],
+    "warbands":[
+    {
+      "id":1,
+      "name":"Upright's Rovers",
+      "models":[
+        {
+          "Name":"Upright",
+          "Species":"Badger",
+          "Cost":65,
+          "M":"d8",
+          "S":"d8",
+          "B":"d6",
+          "R":"d6",
+          "N":"d6",
+          "C":"d4",
+          "A":"d6",
+          "F":"d8",
+          "P":"d10",
+          "weapon1":"Double-Handed Weapon",
+          "weapon2":"One-Handed Weapon",
+          "armour1":null,
+          "armour2":null,
+          "item":"Mages Focus",
+          "special":"Mages Pouch",
+          "pouch":["","","","","","",""]
+        },
+        {
+          "Name":"Fast",
+          "Species":"Hare",
+          "Cost":53,
+          "M":"d8",
+          "S":"d10",
+          "B":"d8",
+          "R":"d6",
+          "N":"d6",
+          "C":"d6",
+          "A":"d6",
+          "F":"d8",
+          "P":"d8",
+          "weapon1":"Bow",
+          "weapon2":"One-Handed Weapon",
+          "armour1":"Light Armour",
+          "armour2":null,
+          "item":"Broadhead Arrows",
+          "special":"Healing Potion",
+          "Special Ammunition":{
+            "Broadhead Arrows":5,
+            "Bodkin Arrows":0,
+            "Lead Sling":0,
+            "Superior Black Powder":0
+          }
+        }
+      ]
+    },
+    {
+      "id":2,
+      "name":"Decon's Destroyers",
+      "models":[
+        {
+          "Name":"Decon",
+          "Species":"Beaver",
+          "Cost":60,
+          "M":"d6",
+          "S":"d8",
+          "B":"d6",
+          "R":"d6",
+          "N":"d4",
+          "C":"d4",
+          "A":"d6",
+          "F":"d8",
+          "P":"d10",
+          "weapon1":"Double-Handed Weapon",
+          "weapon2":null,
+          "armour1":"Light Armour",
+          "armour2":"Light Armour",
+          "item":"Lucky Charm",
+          "special":"Materials"
+        }
+      ]
+    }
+    ],
+    "weapons":{
+
+    },
+    "armour":{
+
+    },
+    "items":{
+    "Healing Potion":{
+      "action":"Any",
+      "description":"Certain herbs and mosses that grow in the wood of Northumbra have curative properties. When gathered and prepared by a skilled herbalist or alchemist they can create healing potions. A character with a Healing potion can use it freely as part of any other action. They restore d6 lost Wounds, and stop the the effects of Poisons. The can be used on another Wounded character, if the user is in base contact with them. Each Healing potion is discarde from the warband roster after use."
+    },
+    "Talisman":{
+      "action":"Move",
+      "description":"A talisman is a protective Spell written onto holy parchment or birch bark and worn somewhere on the body. The first time a model with a Talisman takes one or more Wounds, they may reduce them by d8 Wounds. A talisman is discarded after use."
+    },
+    "Mages Focus":{
+
+    }
+    },
+
+    "logic":{
+    "phases":[
+      "Initiative",
+      "Movement",
+      "Psychic",
+      "Shooting",
+      "Fighting",
+      "Morale"
+    ],
+    "initiativeType":"alternatingPhasesByInitiative",
+    "phase":{
+      "Initiative":{
+        "instruction":"Victory in war can be diecided in a split second, a momnet in which on e side gains the upper hand.",
+        "RollOff":"Both players roll 2D6 until winner. Winner takes the Initiative"
+      },
+      "Movement":{
+        "startConditions":"",
+        "instruction":"Warriors move carefully towards their obejctive, advance quickly across teh battle field, or charge their enimeies event as their comdrades prepare to unlease covering fire."],
+        "actions":["Normal Move", "MoveOverTerrain", "Fly","Falling Back", "Advancing","Readying", "Charging"],
+        "Falling Back":{
+        
+        },
+        "Readying":{
+          
+        },
+        "Readying":{
+
+        },
+        "Charging":{
+          "sequence":["ChooseTargets","EnemyReacts","RollAndCharge"],
+          "ChooseTargets":{
+            "condition":"within 12 \" and not closer than 1 \" you can declare a charge attempt"
+          },
+          "EnemyReacts":{
+            "condition":"if you are being charged and have Overwatch or other reaction such as run away, do that",
+            "Overwatch":"Overwatch is a special type of shooting attack that is described on page 31. A target model can potentially fire Overwatch serveral times in a battle round",
+            "Retreat":"If not already moved you may opt to move up to 3 \" away from the charing model"
+          },
+          "RollAndCharge":{
+            "condition":"If model has not Moved "
+
+          }
+        }
+      },
+      "Psychic":{},
+      "Shooting":{},
+      "Fighting":{},
+      "Morale":{
+        "order":["CheckForBreaking", "RemoveShakenTokens", "TakeNerveTests"],
+        "CheckForBreaking":{
+
+          "instruction":"Check if your Team is broken",
+          "condition":"Broken means all models are Shaken || Flesh Wounds",
+          "condition2":"Half models are shaken || have flesh wounds Roll 2D6 if total is greater than highest leadership of any unshaken in action model the team is broken",
+          "result":"Once Broken you remain broken"
+        },
+        "RemoveShakenTokens":{
+          "instruction":"Any shaken models are no longer shaken"
+        },
+        "TakeNerveTests":{
+          "instruction":"Each model with a Flesh Wound, and for your other models if your team is broken",
+          "modifiers":[
+            {
+              "condition":"Each other friendly model that is shaken or out of action",
+              "consequence":"-1"
+            },
+            {
+              "condition":"Each other friendly model (other than shaken models) within 2 \" of the model",
+              "consequence":"+1"
+            }
+          ],
+          "condition":"Always pass on umodified 1. If roll above models leadership test is failed, model is Shaken and cannot act until becomes unshaken"
+        }
+      }
+    },
+    "players":["P1","P2"],
+    "turns":["1","2","3","4"],
+    "activationStyles":[""]
+    },
+    "battle-round":[
+
+    ],
+    "rules":{
+    "turnSequence":["initiativePhase", "ActionPhase", "EndPhase"],
+    "routines":{
+      "Move":"Roll",
+      "RollOff":"Roll",
+      "AttackDice":"Roll",
+      "DefendDice":"Roll",
+    },
+    "actions":["Sprint", "Attack", "Shoot", "CastSpell","Seach","Hide"],
+    "action":{
+      "Sprint":{
+        "sequence":["Move","Move"],
+        "AttackStat":"M"
+      },
+      "Attack":{
+        "sequence":["Move","RoleOff"],
+        "AttackStat":"M",
+        "DefendStat":"M"
+      },
+      "Shoot":{
+        "sequence":["Move","RoleOff"],
+        "AttackStat":"M",
+        "DefendStat":"M"
+      },
+      "CastSpell":{
+        "sequence":["Move","RoleOff"],
+        "AttackStat":"M",
+        "DefendStat":"M"
+      },
+      "Search":{
+        "sequence":["Move","RoleOff"],
+        "AttackStat":"M",
+        "DefendStat":"M"
+      },
+      "Hide":{
+        "sequence":["Move","RoleOff"],
+        "AttackStat":"M",
+        "DefendStat":"M"
+
+      },
+    },
+    "stats":{
+      "M":{
+        "text":"Movement",
+        "description":"Used to detirmine how far in inches the character can travel in a single Move.",
+        "used":[""]
+      },
+      "S":{
+        "text":"Strike",
+        "description":"Used during close combat, to attack an opponent.",
+        "used":[""]
+      },
+      "B":{
+        "text":"Block",
+        "description":"Used in close combat to defend against enemy attacks.",
+        "used":[""]
+      },
+      "R":{
+        "text":"Ranged",
+        "description":"Determines how well the character shoots with Missle Weapons.",
+        "used":[""]
+      },
+      "N":{
+        "text":"Nimbleness",
+        "description":"Allows the character to avoid Shooting attacks, and to climb.",
+        "used":[""]
+      },
+      "C":{
+        "text":"Concealment",
+        "description":"Used when the character Hides or Ambushes an enemy model.",
+        "used":[""]
+      },
+      "A":{
+        "text":"",
+        "description":"Used for searching for Hidden items or for spotting Ambushers.",
+        "used":[""]
+      },
+      "F":{
+        "text":"",
+        "description":"A measure of willpower, courage and detirmination.",
+        "used":[""]
+      },
+      "P":{
+        "text":"",
+        "description":"Relates to the character's influence on others, whether through personality, charm or intimidation.",
+        "used":[""]
+      }
+    }
+    }
+}

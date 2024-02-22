@@ -1,0 +1,82 @@
+
+  //--content-padding: 10px;
+:host {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; 
+  border: solid 1px #c3c3c3; /* for debugging purposes */
+}
+.app-header {
+  display: block;
+  height: 60px;
+  padding: var(--content-padding);
+  box-shadow: 0px 5px 25px var(--shadow-color);
+   .brand-logo {
+      height:100%;
+    }
+}
+.content {
+  padding: var(--content-padding);
+}
+
+.ex5-grid { /* https://1linelayouts.glitch.me/ */
+  display: grid;
+  grid-template: auto 1fr auto / minmax(150px, 25%) 1fr auto;
+  
+  .ex5-header {
+    grid-column: 1 / 4;
+  }
+
+  .ex5-left-side {
+    grid-column: 1 / 2;
+  }
+
+  .ex5-main {
+     padding:20px;
+    grid-column: 2 / 3;
+  }
+
+  .ex5-right-side {
+    grid-column: 3 / 4;
+  }
+
+  .ex5-footer {
+    grid-column: 1 / 4;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #853a3a;
+}
+
+body > .container {
+  padding: 60px 15px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}

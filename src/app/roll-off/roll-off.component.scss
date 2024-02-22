@@ -1,0 +1,152 @@
+.fancy.accordion-header {
+  background-color: #461702 !important;
+  border: 3px solid #461702;
+  background-image: url("/assets/tileable-wood.png") !important;
+  border-radius: 1px 1px 1px 1px !important;
+	font-family: 'Patrick Hand SC', cursive !important;
+	color: #636a62 !important;
+	text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424;
+	font-size: 22px !important;
+	margin-top: 0;
+}
+
+.fancy.accordion-button.show{
+background-color: #401c07  !important;
+background-image: url("/assets/light-paper-fibers.png") !important;
+}
+
+.fancy.accordion-item {
+	background: transparent !important;
+}
+
+.accordion-button:not(.collapsed) {
+
+}
+
+.accordion-item {
+	background:transparent !important;
+}
+
+.accordion {
+	margin-bottom:0 !important;
+}
+.game-board {
+	.large-model-image {
+		margin: 20px auto 0;
+		text-align: center;
+		max-width: 200px;
+		max-height: 200px;
+		display: block;
+	}
+	p {
+		font-size: 14px;
+		color: #f2f2f2;
+		text-align: left;
+		line-height: 1em;
+	}
+	ul li {
+		font-size: 14px;
+		color: #f2f2f2;
+		text-align: left;
+		line-height: 1em;
+	}
+	h6 {
+		font-size: 18px;
+		font-weight: bold;
+		color: #f2f2f2;
+	}
+}
+
+.page-loaded{
+	margin-top:10px;
+}
+
+.model-thumb {
+	margin:5px;
+    border-radius:60px;
+    border:3px solid transparent;
+    overflow:hidden;
+    padding:0;
+	&.used {
+    	border:3px solid red;
+	}
+    &.available {
+    	border:3px solid green;
+    }
+    &.activated {
+    	border:3px solid orange;
+    }
+    img {
+    	width: 60px;height: 60px;object-fit: cover;
+    }
+}
+
+.model-counter {
+	border:3px solid #282828;
+	background:#282828;
+	padding:20px;
+	&.activated{
+		border:3px solid green;
+	}
+}
+.turn-counter {
+	width:100%;
+	float: left;
+	background:#282828;
+	p {
+		margin:5px;
+		float: left;
+    color: gold;
+    width: 20%;
+    display: block;
+    border: 3px solid #282828;
+    font-size: 21px;
+    text-align: center;
+		&.active-turn {
+			border:3px solid #853a3a;
+		}
+	}
+}
+.played-turns {
+	width:100%;
+	float: left;
+	background:#282828;
+	> div {
+		background:#282828;
+		float: left;
+		width:100%;
+		border-bottom:1px dashed gold;
+		padding: 5px;
+		span {
+			color:#f2f2f2;
+			padding:3px;
+			
+			&.turn {
+				text-transform: uppercase;
+				width: 25px;
+				display: block;
+				float: left;
+			}
+			&.player {
+				width: 100px;
+				display: block;
+				float: left;
+			}
+			&.thumb {
+				float:left;
+				width: 60px;
+				img {
+					width: 40px;
+				    height: 40px;
+				    border-radius: 20px;
+				    border: 2px solid #f2f2f2;
+				}
+			}
+			&.name {
+				width: 300px;
+				display: block;
+				float: left;
+			}
+		}
+	}
+}

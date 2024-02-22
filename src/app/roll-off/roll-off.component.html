@@ -1,0 +1,23 @@
+     <div class="mai n m ain-waaagh">
+                    
+        <div class="row">
+            <div class="col-md-4" style="backgroun d:red">
+                <article class="burrow-box">
+                    <pre>model-dex list="ViewCtrl.p1.list" player="'p1'" ng-if="ViewCtrl.p1.list != undefined"></model-dex</pre>
+                </article>
+            </div>
+            <div class="col-md-4" style="backgrou nd:gold">
+                <article class="burrow-box">
+                    <img src="/instance/burrow/logo.png"/>
+                    <action-viewer p1="" p2=""></action-viewer>
+                </article>
+                <section ui-view="context">
+                </section>
+            </div>
+            <div class="col-md-4" style="backgroun d:red">
+                <article class="burrow-box">
+                    <model-dex list="ViewCtrl.p2.list" player="'p2'" ng-if="ViewCtrl.p2.list != undefined"></model-dex>
+                </article>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,124 @@
+				{{playerWarband.name}}
+<template>
+<div class="row">
+	<div class="col-md-3">
+		<h2>{{playerWarband.name}}</h2>
+		<div class="accordion" id="accordionExample">
+			<div class="accordion-item"
+			v-for="model in playerWarband.models" 
+			:key="model.id">
+			    <h2 class="accordion-header" id="headingOne">
+			      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			        {{model.Name}}&nbsp;the&nbsp;<b>{{model.Species}}</b>
+			      </button>
+			    </h2>
+			    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+			    	<div class="accordion-body">
+			    		<div class="row">
+				        	<div class="col-md-4">
+					        	<span class="stat-name">[M]</span><span class="stat-value">{{model.M}}</span>
+					        	<span class="stat-name">[S]</span><span class="stat-value">{{model.S}}</span>
+					        	<span class="stat-name">[B]</span><span class="stat-value">{{model.B}}</span>
+					        </div>
+				        	<div class="col-md-4">
+					        	<span class="stat-name">[R]</span><span class="stat-value">{{model.R}}</span>
+					        	<span class="stat-name">[N]</span><span class="stat-value">{{model.N}}</span>
+					        	<span class="stat-name">[C]</span><span class="stat-value">{{model.C}}</span>
+					        </div>
+
+					        <div class="col-md-4">
+					        	<span class="stat-name">[A]</span><span class="stat-value">{{model.A}}</span>
+					        	<span class="stat-name">[F]</span><span class="stat-value">{{model.F}}</span>
+					        	<span class="stat-name">[P]</span><span class="stat-value">{{model.P}}</span>
+					      	</div>
+					    </div>
+					    <div class="row">
+				        	<div class="col-md-12">
+					        	<span class="weapon-name">Weapon 1</span><span class="weapon-value">{{model.weapon1}}</span>
+				        	</div>
+				        	<div class="col-md-12">
+					        	<span class="weapon-name">Weapon 2</span><span class="weapon-value">{{model.weapon2}}</span>
+				        	</div>
+				        	<div class="col-md-12">
+					        	<span class="weapon-name">Armour 1</span><span class="weapon-value">{{model.armour1}}</span>
+				        	</div>
+				        	<div class="col-md-12">
+					        	<span class="weapon-name">Armour 2</span><span class="weapon-value">{{model.armour2}}</span>
+				        	</div>
+				        	<div class="col-md-12">
+					        	<span class="weapon-name">Item</span><span class="weapon-value">{{model.item}}</span>
+				        		<div v-if="model.item == 'Mages Pouch'">
+				        			<span v-for="item in model.pouch" class="pouch-item"><i class="ra ra-round-bottom-flask"></i>{item}}</span>
+				        		</div>
+				        	</div>
+				        	<!-- 
+          "item":"Broadhead Arrows",
+          "special":"Healing Potion",
+          "Special Ammunition":{
+            "Broadhead Arrows":5,
+            "Bodkin Arrows":0,
+            "Lead Sling":0,
+            "Superior Black Powder" -->
+				        	<div class="col-md-12">
+					        	<span class="weapon-name">Special</span><span class="weapon-value">{{model.special}}</span>
+				        		<div v-if="model.special == 'Mages Pouch'">
+				        			<span v-for="item in model.pouch" class="pouch-item"><i class="ra ra-round-bottom-flask"></i>{{item}}</span>
+				        		</div>
+				        	</div>
+
+				        </div>
+			    	</div>
+			    </div>
+		  	</div>
+		</div>
+
+		<article class="card text-center">
+		  	<div class="card-header">
+		  	</div>
+		  	<div class="card-body">
+		    	<h5 class="card-title">{{destination.name}}</h5>
+			</div>
+		</article>
+	</div>
+	<div class="col-md-6">
+		middle			
+	</div>
+	<div class="col-md-3">
+		<article class="card text-center">
+		  	<div class="card-header">
+				{{playerWarband}}
+		  	</div>
+		  	<div class="card-body">
+		    	<h5 class="card-title">{{destination.name}}</h5>
+			</div>
+		</article>	
+	</div>
+</div>
+</template>
+
+<script>
+
+import sourceData from '@/data.json'
+
+export default {
+	computed:{
+		playerWarband(){
+			let player = sourceData.players.find(player => player.id === 1)
+			return sourceData.warbands.find(warband => warband.id === player.warband)
+		},
+		computerWarband(){
+			let player = sourceData.players.find(player => player.id === 2)
+			return sourceData.warbands.find(warband => warband.id === player.warband)
+		},
+		warbandDefending(){
+
+		},
+		destinationId(){
+			return parseInt(this.$route.params.id)
+		},
+		destination(){
+			return sourceData.destinations.find(destination => destination.id === this.destinationId)
+		}
+	}
+}
+</script>

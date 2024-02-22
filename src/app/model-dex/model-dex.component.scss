@@ -1,0 +1,71 @@
+.model-thumb {
+	margin:5px;
+    border-radius:60px;
+    border:3px solid transparent;
+    overflow:hidden;
+    padding:0;
+	&.used {
+    	border:3px solid red;
+	}
+    &.available {
+    	border:3px solid green;
+    }
+    &.activated {
+    	border:3px solid orange;
+    }
+    img {
+    	width: 60px;height: 60px;object-fit: cover;
+    }
+}
+
+.model-image {
+	border-radius: 10px;
+	max-height: 70px;
+	border-radius: 3px;
+}
+.model-name {
+	margin-left:10px;
+
+  font-family: 'Patrick Hand SC', cursive !important;
+  color: #636a62 !important;
+  font-size: 22px !important;
+}
+
+.stat-name {
+	width:50%;
+	display:block;
+	float:left;
+	font-weight:bold;
+}
+.stat-value {
+	display:block;
+	width:50%;
+	float:left;
+}
+
+.weapon-name {
+	width:35%;
+	display:block;
+	float:left;
+	font-weight:bold;
+}
+.weapon-value {
+	display:block;
+	width:65%;
+	float:left;
+}
+
+.pouch-item {
+	width:50%;
+	display:block;
+	float:left;
+}
+
+.burrow-box {
+	// background-color: #cfd1b95c;
+	background-color: #141a11;
+	background-image:url('/assets/light-paper-fibers.png');
+	float:left;
+	width:100%;
+	padding:10px;
+}
